@@ -1,28 +1,31 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { ApolloProvider } from 'react-apollo-hooks';
 import './App.css';
+import apolloClient from './apolloClient';
+import TokenForm from './TokenForm';
+import StarredRepos from './StarredRepos';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+	state = {
+		token: null,
+	};
+	componentDidMount() {
+		this.setState({ token: sessionStorage.getItem('token') });
+	}
+	setToken = token => {
+		sessionStorage.setItem('token', token);
+		this.setState({ token });
+	};
+	render() {
+		const { token } = this.state;
+		return (
+			<div className="App">
+				<ApolloProvider client={apolloClient}>
+					{token ? <StarredRepos /> : <TokenForm setToken={this.setToken} />}
+				</ApolloProvider>
+			</div>
+		);
+	}
 }
 
 export default App;
