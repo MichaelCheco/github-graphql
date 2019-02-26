@@ -970,6 +970,19 @@
     "@telerik/kendo-draggable" "^1.9.0"
     prop-types "^15.6.0"
 
+"@progress/kendo-react-intl@^2.6.1":
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-intl/-/kendo-react-intl-2.6.1.tgz#62835c1d79677e782011af09e3746537c2f869a7"
+  integrity sha512-NLRn9qH3L5wJ4AF7rmz7XLNTb4b0NAx36vnC1RHFhyH0GRBQ64Ph3Alg1LBgkcKzpt2tP0UmKsLcsv2AVHrHjA==
+  dependencies:
+    "@telerik/kendo-intl" "^1.3.0"
+    prop-types "^15.6.0"
+
+"@progress/kendo-theme-default@^3.3.1":
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-theme-default/-/kendo-theme-default-3.3.1.tgz#ed80ca247792094512e60320383e1e9cb0f58689"
+  integrity sha512-3PbhtrljTsMABtUAEtWytiWYL6Qm+oUwEqD5Ppmu/lMxZgdJJm9yhP9iRNwhctKoKt7hMg92zacpypHrlKTjdw==
+
 "@svgr/babel-plugin-add-jsx-attribute@^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@svgr/babel-plugin-add-jsx-attribute/-/babel-plugin-add-jsx-attribute-4.0.0.tgz#5acf239cd2747b1a36ec7e708de05d914cb9b948"
@@ -1079,6 +1092,11 @@
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/@telerik/kendo-draggable/-/kendo-draggable-1.9.1.tgz#c1ae7f8fddab38c6caffc548776cdd4d69a5c0fa"
   integrity sha512-F5AeqUFevoSphuiYU48Jui+4eTXAM8rPpuSj5Sh6h6gC2NabpoawIH/M/ND/nAiC0A+WrgsBptdNF85NyrMhRw==
+
+"@telerik/kendo-intl@^1.3.0":
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/@telerik/kendo-intl/-/kendo-intl-1.4.4.tgz#be0e0a2b00089bcc5253f6b9e31bae3998e99a90"
+  integrity sha512-aALwrLRyWLo5P6Tk9PJPXpZlsooud/6laMNULffD7cPsgO7LSFOFcCWw+ESSYc7FRu6n70y0+wheGGemA7F9kA==
 
 "@types/node@*":
   version "11.9.5"
