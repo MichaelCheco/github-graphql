@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Input } from '@progress/kendo-react-inputs';
 
 export default class TokenForm extends Component {
 	handleSubmit = e => {
@@ -13,7 +12,7 @@ export default class TokenForm extends Component {
 	render() {
 		return (
 			<form onSubmit={this.handleSubmit}>
-				<Input
+				<input
 					name="token"
 					placeholder="Enter your GitHub token"
 					ref={input => {
